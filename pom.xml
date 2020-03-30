@@ -84,7 +84,7 @@
       <repository>
          <id>myserver</id>
          <name>duvva</name>
-         <url>http://3.93.152.179:8081/manager/html</url>
+         <url>http://3.93.152.179:8081/manager/text</url>
       </repository>
     </distributionManagement>	
 </project>
