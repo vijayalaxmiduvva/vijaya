@@ -4,7 +4,7 @@ pipeline {
 	stages {
 	    stage ('Compile Stage'){
 		   steps {
-		       withmaven(maven : 'maven-3.6.0') {
+		       with (maven : 'maven-3.6.0') {
 			       bat 'mvn clean compile'
 			    }
 		    }
