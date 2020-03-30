@@ -26,6 +26,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+        <repository>
+            <id>myserver</id>
+            <url>http://3.93.152.179:8081/manager/html</url>
+        </repository>
+  </distributionManagement> 	
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
