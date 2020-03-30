@@ -11,7 +11,12 @@
   <name>duvva</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
+  <distributionManagement>
+    <Repository>
+      <id>myserver</id>
+      <url>http://3.93.152.179:8081/manager/html/</url>
+    </Repository>
+  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
