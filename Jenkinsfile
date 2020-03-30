@@ -1,12 +1,22 @@
 // Declarative pipeline
 pipeline {
-
     agent any
+
     stages {
-        stage('Compile stage') {
+        stage('Compile Stage') {
             steps {
-                sh "mvn clean compile" 
+                sh "mvn compile"
+            }
+        }
+        stage('Test') {
+            steps {
+                sh "mvn test"
+            }
+        }
+        stage('Package') {
+            steps {
+                sh "mvn package"
             }
         }
     }
-} 
+}
