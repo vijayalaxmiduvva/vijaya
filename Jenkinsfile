@@ -1,13 +1,14 @@
 // Declarative pipeline
 pipeline {
     agent any
-	stages {
-	    stage ('Compile Stage'){
-		   steps {
-		       withMaven(maven : 'maven-3.6.0') {
-			       sh 'mvn --version'
-			    }
-		    }
-	    }
-     }
-}  
+    tools {
+        maven 'Maven_3.6.0' 	
+    stages {
+        stage('Compile stage') {
+            steps {
+                bat "mvn clean compile"
+	        }
+        }
+    }
+  }	
+}
