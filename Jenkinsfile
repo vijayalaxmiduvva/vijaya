@@ -8,10 +8,5 @@ pipeline {
                 sh "mvn clean compile" 
             }
         }
-        stage('Compile stage') {
-            steps {
-                sh "mvn test" 
-            }
-        }
     }
 } 
